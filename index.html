@@ -9,18 +9,10 @@
 <style>
     body,h1 {font-family: "Montserrat", sans-serif; color: #f1f1f1}
     img {margin-bottom: -7px}
-    img.thumbnail {border-top-left-radius: 10px;border-top-right-radius: 10px;}
     .w3-quarter img{cursor: pointer}
     .w3-third img{cursor: pointer}
     .w3-row-padding img {margin-bottom: 12px}
-    .w3-card-2:hover {  }
-    .w3-card-2 {
-        background: #212121;
-        border-radius: 10px;
-        border: 1px solid #212121;
-        color: #f1f1f1;
-        margin-bottom: 12px;
-    }
+
     .w3-container {
         padding: 16px 16px;
     }
@@ -37,8 +29,10 @@
 <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-black w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a>
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOME</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a>
-    <a href="#art" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">MY ART</a>
+    <a href="#about" onclick="w3_close()"
+       class="w3-bar-item w3-button w3-center w3-padding-16">INTRODUCTION</a>
+    <a href="#contact" onclick="w3_close()"
+       class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
 </nav>
 <!-- Top menu on small screens -->
 <header class="w3-container w3-black w3-top w3-xlarge w3-padding-16 w3-opacity-min">
@@ -61,119 +55,31 @@
              class="w3-image" style="margin-top:83px" >
     </header>
     <div class="w3-content w3-padding w3-justify w3-text-my w3-padding-top-64" id="about">
-        <h2>About Me</h2>
+        <h2>Introduction</h2>
         <hr style="width:200px">
         <p>
             My name is Robin Černín and I live and work currently in Brisbane, Australia.<br>My career has been previously focused on Information Security. I am currently working as Senior Software Maintenance Engineer in Red Hat with Cloud Computing software OpenStack.
         </p>
     </div>
 
-    <div class="w3-content w3-padding w3-justify w3-text-my w3-padding-top-64" id="art">
-        <h2>My Art</h2>
+    <div
+            class="w3-content w3-padding w3-justify w3-text-my w3-padding-top-64" id="contact">
+        <h2>Contact</h2>
         <hr style="width:200px">
-    </div>
-    <!-- Photo Grid -->
-    <div class="w3-content w3-padding w3-justify w3-row-padding" style="margin-bottom:128px">
-        <div class="w3-half">
-            <div class="w3-card-2">
-                <img class="thumbnail" src="src/thumbnails/Book_Cover_Mockup.jpg" style="width:100%" onclick="onClick(this)" alt="Book Cover “The Garden of Secrets“ - Mockup">
-                <div class="w3-container">
-                    <small>10/01/2021</small>
-                    <h2>Book Cover</h2>
-                    <p>Book Cover <em>“The Garden of Secrets“</em> - Mockup
-                        </br>Graphic Design Masterclass Tutorial by <a href="https://lindsaymarsh.myportfolio.com" target="_blank">Lindsay Marsh</a>
-                        </br>Photo by <a href="https://www.pexels.com/@iriser?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" target="_blank">Irina Iriser</a> from <a href="https://www.pexels.com/photo/photo-of-red-peonies-painting-1005711/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" target="_blank">Pexels</a>
-                    </p>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#Book</span>
-                </div>
-            </div>
-            <div class="w3-card-2">
-                <img class="thumbnail" src="src/thumbnails/Book_Cover.jpg" style="width:100%" onclick="onClick(this)" alt="Book Cover “The Garden of Secrets“">
-                <div class="w3-container">
-                    <small>10/01/2021</small>
-                    <h2>Book Cover</h2>
-                    <p>Book Cover <em>“The Garden of Secrets“</em>
-                        </br>Graphic Design Masterclass Tutorial by <a href="https://lindsaymarsh.myportfolio.com" target="_blank">Lindsay Marsh</a>
-                        </br>Photo by <a href="https://www.pexels.com/@iriser?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" target="_blank">Irina Iriser</a> from <a href="https://www.pexels.com/photo/photo-of-red-peonies-painting-1005711/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" target="_blank">Pexels</a></p>
-                    </p>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#Book</span>
-                </div>
-            </div>
-
-            <div class="w3-card-2">
-                <img class="thumbnail" src="src/images/Roasted_Bean_Coffee_Bags.jpg" style="width:100%" onclick="onClick(this)" alt="Coffee Brand “The Roasted Bean“ - Coffee Bags">
-                <div class="w3-container">
-                    <small>05/01/2021</small>
-                    <h2>Coffee Brand</h2>
-                    <p>Coffee Brand <em>“The Roasted Bean“</em> - Coffee Bags</p>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#Coffee</span>
-                </div>
-            </div>
-            <div class="w3-card-2">
-                <img class="thumbnail" src="src/images/Refreshed_Brand_The_Roasted_Bean.jpg" style="width:100%" onclick="onClick(this)" alt="Coffee Brand “The Roasted Bean“ - Logo Design.">
-                <div class="w3-container">
-                    <small>05/01/2021</small>
-                    <h2>Coffee Brand</h2>
-                    <p>Coffee Brand <em>“The Roasted Bean“</em> - Logo Design.</p>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#Coffee</span>
-                </div>
-            </div>
-            <div class="w3-card-2">
-                <img class="thumbnail" src="src/images/Refreshed_Brand_Oakao_Poster.jpg" style="width:100%" onclick="onClick(this)" alt="Premium Fashion Brand OAKAO - Poster.">
-                <div class="w3-container">
-                    <small>03/01/2021</small>
-                    <h2>Premium Fashion Brand</h2>
-                    <p>Premium Fashion Brand <em>“OAKAO“</em>  - Poster.
-                        </br>Photo by <a href="https://www.pexels.com/@mateo-almendares-1496989?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" target="_blank">Mateo Almendares</a> from <a href="https://www.pexels.com/photo/photo-of-woman-wearing-sun-hat-2884310/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" target="_blank">Pexels</a></p>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#Fashion</span>
-                </div>
-            </div>
-        </div>
-        <div class="w3-half">
-            <div class="w3-card-2">
-                <img class="thumbnail" src="src/images/Refreshed_Brand_Oakao.jpg" style="width:100%" onclick="onClick(this)" alt="Premium Fashion Brand OAKAO - Logo Design.">
-                <div class="w3-container">
-                    <small>03/01/2021</small>
-                    <h2>Premium Fashion Brand</h2>
-                    <p>Premium Fashion Brand <em>“OAKAO“</em>  - Logo Design.</p>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#Fashion</span>
-                </div>
-            </div>
-            <div class="w3-card-2">
-                <img class="thumbnail" src="src/images/VeseleVanoce_Print.jpg" style="width:100%" onclick="onClick(this)" alt="Merry Christmas 2020">
-                <div class="w3-container">
-                    <small>30/12/2020</small>
-                    <h2>Veselé Vánoce</h2>
-                    <p>Christmas cards printed on 100% recycled paper</p>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#Merry Christmas</span>
-                </div>
-            </div>
-            <div class="w3-card-2">
-                <img class="thumbnail" src="src/images/VeseleVanoce_2020.jpg" style="width:100%" onclick="onClick(this)" alt="Merry Christmas 2020">
-                <div class="w3-container">
-                    <small>30/12/2020</small>
-                    <h2>Veselé Vánoce</h2>
-                    <p>Design of Christmas cards</p>
-                    <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#Merry Christmas</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Page Content -->
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image">
-        <p id="caption"></p>
+        <p>
+            E-Mail: rcernin[at]redhat.com
+            <br>
+            IRC: rcernin on irc.libera.chat, freenode.net
+            <br>
+            Github: <a href="https://github.com/zerodayz"
+                       target="_blank">@zerodayz
+        </a>
+        </p>
     </div>
 </div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-my-black w3-center w3-opacity w3-xlarge" style="margin-top:128px">
-    <a href="https://twitter.com/RCernin"><i class="fa fa-twitter w3-hover-opacity"></i></a>
     <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 
@@ -188,14 +94,6 @@
     function w3_close() {
         document.getElementById("mySidebar").style.display = "none";
         document.getElementById("myOverlay").style.display = "none";
-    }
-
-    // Modal Image Gallery
-    function onClick(element) {
-        document.getElementById("img01").src = element.src.replace('thumbnails', 'images');
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
     }
 
 </script>
