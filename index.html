@@ -22,11 +22,17 @@
     .w3-my-black {
         background: #212121;
     }
+    .w3-my-gray {
+        background: #2E2E2E;
+    }
+    .w3-my-grad {
+        background-image: linear-gradient(#2E2E2E, black);
+    }
 </style>
 <body class="w3-black">
 
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-black w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-animate-right w3-black w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a>
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOME</a>
     <a href="#about" onclick="w3_close()"
@@ -35,9 +41,8 @@
        class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
 </nav>
 <!-- Top menu on small screens -->
-<header class="w3-container w3-black w3-top w3-xlarge w3-padding-16 w3-opacity-min">
-    <span class="w3-left w3-padding">Robin Černín</span>
-    <a href="javascript:void(0)" class="w3-right w3-button w3-black" onclick="w3_open()">☰</a>
+<header class="w3-container w3-top w3-xlarge">
+    <a href="javascript:void(0)" class="w3-right w3-button" onclick="w3_open()">☰</a>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -45,15 +50,20 @@
 <!-- Header/Home -->
 
 
-
+<div class="w3-content" style="max-width:100%">
+    <header class="w3-container w3-center w3-my-gray" style="height:83px;">
+    </header>
+</div>
 <!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
-    <header class="w3-container w3-padding-32 w3-center w3-black" style="max-width:1500px;margin-top:83px">
+<div class="w3-content" style="max-width:100%">
+    <header class="w3-container w3-center w3-my-gray" style="max-width:100%;">
         <h1 class="w3-jumbo">Robin Černín.</h1>
         <p>Senior Software Maintenance Engineer at Red Hat.</p>
-        <img src="src/images/IMG_3881_A.png" alt="Picture of Robin Černín"
-             class="w3-image" style="margin-top:83px" >
+        <img src="src/images/IMG_0205.png" alt="Picture of Robin Černín"
+             class="w3-image" width="400" style="margin-top:83px" >
     </header>
+</div>
+<div class="w3-content w3-my-grad" style="max-width:100%">
     <div class="w3-content w3-padding w3-justify w3-text-my w3-padding-top-64" id="about">
         <h2>Introduction</h2>
         <hr style="width:200px">
@@ -81,7 +91,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-my-black w3-center w3-opacity w3-xlarge" style="margin-top:128px">
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-xlarge" style="margin-top:128px">
     <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 
