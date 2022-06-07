@@ -2,7 +2,8 @@
 title: Markdown demo
 date: 2022-06-07T10:00:31+10:00
 ---
-Here's a quick example of some Markdown text syntax and what it looks like when rendered to HTML.
+I am using my own customized Hugo theme using W3 CSS. If you like my theme and would like to explore more, here's a 
+quick example of some Markdown text syntax and what it looks like when rendered to HTML.
 <!--more-->
 
 # Header H1
@@ -17,13 +18,13 @@ ___
 
 ## Emphasis
 
-**This is bold text**
+`**This is bold text**` renders as **This is bold text** 
 
-__This is bold text__
+`__This is bold text__` renders as __This is bold text__
 
-*This is italic text*
+`*This is italic text*` renders as *This is italic text*
 
-_This is italic text_
+`_This is italic text_` renders as _This is italic text_
 
 ~~Strikethrough~~
 
@@ -33,10 +34,9 @@ _This is italic text_
 >> ...by using additional greater-than signs right next to each other...
 > > > ...or with spaces between arrows.
 
-
 ## Lists
 
-Unordered
+### Unordered
 
 + Create a list by starting a line with `+`, `-`, or `*`
 + Sub-lists are made by indenting 2 spaces:
@@ -44,27 +44,23 @@ Unordered
         * Ac tristique libero volutpat at
         + Facilisis in pretium nisl aliquet
         - Nulla volutpat aliquam velit
-+ Very easy!
 
-Ordered
+### Ordered
 
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
-
-
 1. You can use sequential numbers...
 1. ...or keep all the numbers as `1.`
 
-Start numbering with offset:
+### Start numbering with offset:
 
 57. foo
 1. bar
 
-
 ## Code
 
-Inline `code`
+Inline `code` looks like this.
 
 Indented code
 
@@ -74,7 +70,7 @@ Indented code
     line 3 of code
 
 
-Block code "fences"
+Block code using "fences"
 
 ```
 Sample text here...
@@ -112,10 +108,7 @@ Visit [example.org](http://www.example.org)
 
 ## Images
 
-
-## Plugins
-
-### Footnotes
+## Footnotes
 
 Footnote 1 link [^first].
 
