@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<title>Robin Černín</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{ $styles := resources.Get "css/w3.css" | minify }}
+{{ $picture_of_me := resources.Get "images/picture_of_me.png" }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,h1 {font-family: "Montserrat", sans-serif; color: #f1f1f1}
+    img {margin-bottom: -7px}
+    .w3-quarter img{cursor: pointer}
+    .w3-third img{cursor: pointer}
+    .w3-row-padding img {margin-bottom: 12px}
+
+    .w3-container {
+        padding: 16px 16px;
+    }
+    .w3-text-my {
+        color: #f1f1f1;
+    }
+    .w3-my-button {
+        border:none;
+        display:inline-block;
+        padding:8px 16px;
+        vertical-align:middle;
+        overflow:hidden;
+        text-decoration:none;
+        color:#f1f1f1;
+        background-color:#39393b;
+        text-align:center;
+        cursor:pointer;
+        white-space:nowrap
+    }
+    .w3-my-button:hover {
+        color:#000!important;
+        background-color:#ccc!important
+    }
+    .w3-my-black {
+        background: #171717;
+    }
+    .w3-my-gray {
+        background: #212124;
+    }
+    .w3-my-grad {
+        background-image: linear-gradient(#212124, #171717);
+    }
+    details summary::-webkit-details-marker {
+        display:none;
+    }
+    details.description[open] summary::after {
+        display:none;
+    }
+</style>
+<body class="w3-my-black">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-animate-right w3-my-gray w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a>
+    <a href="/" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOME</a>
+    <a href="/introduction/#start" onclick="w3_close()"
+       class="w3-bar-item w3-button w3-center w3-padding-16">INTRODUCTION</a>
+    <a href="/#posts" onclick="w3_close()"
+       class="w3-bar-item w3-button w3-center w3-padding-16">POSTS</a>
+    <a href="#contact" onclick="w3_close()"
+       class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
+</nav>
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-xlarge">
+    <a href="javascript:void(0)" class="w3-right w3-button" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Header/Home -->
+<div class="w3-content" style="max-width:100%">
+    <header class="w3-container w3-center w3-my-gray" style="height:83px;">
+    </header>
+</div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:100%">
+    <header class="w3-container w3-center w3-my-gray" style="max-width:100%;">
+        <h1 class="w3-jumbo">Robin Černín.</h1>
+        <p>Principal Software Maintenance Engineer at Red Hat.</p>
+        <img src="{{ $picture_of_me.Permalink }}" alt="Picture of Robin Černín" width="400"  style="margin-top:83px" class="w3-image">
+    </header>
+</div>

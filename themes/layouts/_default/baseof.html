@@ -1,0 +1,25 @@
+{{ partial "header.html" . }}
+<main>
+    <div class="w3-content w3-my-grad" style="max-width:100%">
+        <div id="posts"></div>
+        {{ block "main" . }}
+        {{end}}
+        <div
+                class="w3-content w3-padding w3-justify w3-text-my w3-padding-top-64" id="contact">
+            <h2>Contact</h2>
+            <hr style="width:200px">
+            <p>
+                E-Mail: rcernin[at]redhat.com
+                <br>
+                IRC: rcernin on irc.libera.chat, freenode.net
+                <br>
+                Github: <a href="https://github.com/zerodayz"
+                           target="_blank">@zerodayz</a>
+                <br>
+                Quay.io: <a href="https://quay.io/user/zerodayz"
+                            target="_blank">@zerodayz</a>
+            </p>
+        </div>
+    </div>
+</main>
+{{ partial "footer.html" . }}

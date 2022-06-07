@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div class="w3-content w3-padding w3-justify w3-text-my w3-padding-top-64" id="start">
+    <h2><a class="w3-hover-opacity" style="cursor:pointer;text-decoration: none" onclick="window.history.back()">←</a> {{ .Title }}</h2>
+    <hr style="width:200px">
+    <p>
+        {{ .Content }}
+    </p>
+</div>
+{{ end }}
